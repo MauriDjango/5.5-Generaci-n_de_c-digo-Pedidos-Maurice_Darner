@@ -1,4 +1,6 @@
-package logic
+package logic.inventory
+
+import logic.Product
 
 class InventoryImpl: Inventory() {
 

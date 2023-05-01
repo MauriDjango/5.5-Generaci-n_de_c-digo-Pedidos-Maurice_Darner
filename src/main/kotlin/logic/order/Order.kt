@@ -1,5 +1,6 @@
-package logic
+package logic.order
 
+import logic.Product
 import logic.payment.Payment
 import logic.state.State
 import java.time.LocalDateTime
@@ -9,6 +10,7 @@ abstract class Order(val products: MutableList<Product> = mutableListOf(), val s
 
     abstract val payments: Any
     val total: Double = getTotal()
+    val due = getDue()
 
     var date: LocalDateTime
     var id: UUID

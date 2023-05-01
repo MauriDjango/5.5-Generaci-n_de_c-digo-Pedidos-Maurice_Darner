@@ -6,8 +6,8 @@ import java.util.*
 class Product(
     val name: String,
     val description: String,
-    val price: Float,
-    val tax: Float,
+    val price: Double,
+    val tax: Double,
     ) {
 
     var id: UUID

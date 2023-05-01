@@ -1,4 +1,6 @@
-package logic
+package logic.inventory
+
+import logic.Product
 
 abstract class Inventory {
     abstract val productList:List<Product>

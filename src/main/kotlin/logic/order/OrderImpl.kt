@@ -1,8 +1,8 @@
-package logic
+package logic.order
 
+import logic.Product
 import logic.payment.Payment
 import logic.state.State
-import java.time.LocalDateTime
 import java.util.*
 
 class OrderImpl(proList: MutableList<Product>, state: State = State.Pending): Order(proList, state) {
